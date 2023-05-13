@@ -1,0 +1,141 @@
+.resume {
+  background-color: var(--primary-black);
+  display: block;
+  font-size: 12px;
+  margin: 20px 20px 100px 20px;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--primary-text);
+    padding: 50px 40px 30px 20px;
+
+
+    .intro {
+      border: 1px solid var(--primary-text);
+      border-radius: 20px;
+      color: var(--primary-text);
+      display: flex;
+      padding: 10px 15px;
+      justify-content: center;
+      align-items: center;
+
+      i {
+        padding-right: 10px;
+      }
+    }
+  }
+
+  .head {
+    font-size: 48px;
+    line-height: 60px;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 33px;
+    letter-spacing: -0.2px;
+    padding: 30px 0;
+
+    span {
+      color: var(--primary-green);
+    }
+  }
+
+  .para {
+    position: relative;
+    color: var(--primary-text);
+    font-size: 16px;
+    margin-bottom: 40px;
+    padding-left: 20px;
+    z-index: 1;
+
+    p {
+      line-height: 0.8cm;
+      width: 60%;
+    }
+    li::marker{
+      font-size: 2rem;
+      color: var(--primary-text);
+    }
+    li:hover::marker{
+      color: var(--primary-green);
+    }
+    .certificate{
+      margin-left: 20px;
+      position: relative;
+      .agency:last-child{
+        margin-bottom: 40px;
+      }
+      .year{
+        transition: 0.2s;
+      }
+      .year:hover{
+        cursor: text;
+        color: var(--primary-green);
+      }
+    }
+
+    .subject{
+      color: white;
+      margin-top: 40px;
+    }
+    li:hover{
+      .year{
+        color: var(--primary-green);
+      }
+    }
+  }
+  .para::before {
+    content: '';
+    background: #333333;
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    left: -3px;
+    top: 10px;
+    z-index: -1;
+  }
+
+  .achieve{
+    padding: 60px 20px 30px 0;
+    display: flex;
+    .card{
+      width: 30%;
+      span{
+        color: var(--primary-green);
+        font-size: 70px;
+        padding: 20px 0;
+      }
+      p{
+        font-size: 16px;
+        color: var(--primary-text);
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 1100px) {
+
+  .nav-menu{
+    position: fixed;
+    right: 40px;
+    top: 40px;
+  }
+  .head {
+    font-size: 2.2rem;
+  }
+  .para p{
+    width: 100% !important;
+  }
+  .achieve{
+    display: grid;
+    margin: auto;
+    .card{
+      width: 100% !important;
+      text-align: center;
+    }
+  }
+
+}

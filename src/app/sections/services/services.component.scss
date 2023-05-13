@@ -1,0 +1,109 @@
+.services {
+  background-color: var(--primary-black);
+  display: block;
+  margin: auto;
+  font-size: 12px;
+  padding: 20px 20px 100px 20px;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--primary-text);
+    padding: 50px 40px 30px 20px;
+
+
+    .intro {
+      border: 1px solid var(--primary-text);
+      border-radius: 20px;
+      color: var(--primary-text);
+      display: flex;
+      padding: 10px 15px;
+      justify-content: center;
+      align-items: center;
+
+      i {
+        padding-right: 10px;
+      }
+    }
+  }
+
+  .head {
+    font-size: 48px;
+    line-height: 60px;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 33px;
+    letter-spacing: -0.2px;
+    padding: 30px 0;
+
+    span {
+      color: var(--primary-green);
+    }
+  }
+
+  .para {
+    position: relative;
+    color: var(--primary-text);
+    font-size: 16px;
+    margin-bottom: 40px;
+    margin-right: 5%;
+    padding-left: 20px;
+    z-index: 1;
+
+    .card{
+      max-width: 763px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 10px 40px 10px 40px ;
+      height: 200px;
+      border: 1px solid var(--primary-text);
+      border-radius: 30px;
+      margin: 15px 0 ;
+      transition: 0.2s;
+
+      .section{
+        display: flex;
+        justify-content: space-between ;
+        .h1{
+          font-size: x-large;
+          color: var(--primary-white);
+        }
+        i{
+          color: var(--primary-green);
+          font-size: 35px;
+        }
+      }
+      p:last-child{
+        margin-top: 30px;
+        color: var(--primary-white);
+        font-size: 14px;
+      }
+    }
+    p{
+      transition: 0.2s;
+    }
+    .card:hover{
+      border-color: var(--primary-green);
+      p:last-child{
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 1100px) {
+
+  .nav-menu{
+    position: fixed;
+    right: 40px;
+    top: 40px;
+  }
+  .head {
+    font-size: 2.2rem;
+  }
+
+}

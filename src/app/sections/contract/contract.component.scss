@@ -1,0 +1,145 @@
+
+.contact{
+  padding: 20px;
+}
+.content {
+  max-width: 770px;
+  width: 100%;
+  margin-left: auto;
+}
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.subtitle {
+  font-size: 12px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin: 0;
+  border: 1px solid #565656;
+  padding: 9px 20px;
+  border-radius: 30px;
+  margin-bottom: 53px;
+  display: inline-flex;
+  align-items: center;
+}
+h1 {
+  font-size: 48px;
+  line-height: 60px;
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 33px;
+}
+span{
+  color: var(--primary-green);
+}
+.addr{
+  font-size: 24px;
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 60px;
+}
+.grid-box{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+div{
+  margin: 20px 0;
+}
+label{
+  color: white;
+  sup{
+    color: red;
+  }
+}
+
+input, select, textarea {
+  display: block;
+  color: #fff;
+  width: 95%;
+  border: 1px solid rgba(77, 77, 77, 0.83);
+  border-radius: 10px;
+  background: none;
+  font-size: 18px;
+  padding: 10px;
+  margin: 5px auto;
+  transition: .2s;
+}
+.full input, textarea{
+  width: 100% ;
+}
+textarea {
+  height: 140px;
+  border-bottom: 1px solid #555555;
+  resize: none;
+}
+textarea::placeholder, input::placeholder {
+  color: red;
+  border-radius: 5px;
+}
+
+option {
+  font-size: 16px;
+  color: #ffffff;
+  padding: 10px;
+  background-color: var(--primary-black);
+}
+
+/* Style the <option> elements when hovered */
+option:hover {
+  background-color: #f1f1f1;
+}
+
+/* Style the <option> elements when selected */
+option:checked {
+  background-color: #ddd;
+}
+input[type="submit"]{
+  max-width: 240px;
+  background-color: var(--primary-green);
+  border: 1px solid var(--primary-green);
+  transition: 0.2s ease-in-out;
+  padding: 20px 0;
+  float: left;
+  border-radius: 30px;
+  cursor: pointer;
+  color: var(--primary-black);
+  margin-bottom: 30px;
+}
+.upload label{
+  text-transform: uppercase;
+  border: 1px solid #565656;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+label i {
+  font-size: 18px;
+  margin: 2px;
+}
+#upload {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+input[type="submit"]:hover{
+  background-color: var(--primary-black);
+  color: var(--primary-white);
+}
+
+
+
+
+@media (max-width: 1100px){
+  .grid-box{
+    display: block !important;
+    input{
+      width: 100% !important;
+    }
+  }
+}

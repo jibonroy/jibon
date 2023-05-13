@@ -1,0 +1,63 @@
+.nav{
+  .menu-card{
+    background-color: var(--primary-black);
+    width: 55px;
+    padding: 10px;
+    border: 1px solid #565656;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    ul{
+      list-style-type: none;
+      li{
+        margin: 15px 0 15px 0;
+        position: relative;
+      }
+      .name{
+        visibility: hidden;
+        display: block;
+        position: absolute;
+        color: white;
+        right: 40px;
+        transition: 0.3s ease-in;
+        opacity: 0;
+        background-color: #565656;
+        border-radius: 5px;
+        font-size: 12px;
+        padding: 3px 5px;
+        z-index: 1;
+      }
+      .name::before {
+        content: '';
+        width: 10px;
+        height: 10px;
+        background: #565656;
+        position: absolute;
+        right: -3px;
+        top: 50%;
+        transform: rotate(54deg) skew(-8deg, -39deg);
+        margin-top: -5px;
+        z-index: -1;
+      }
+      a{
+        text-decoration: none;
+        color: var(--primary-text);
+        transition: 0.2s;
+        i{
+          font-size: 20px;
+        }
+      }
+      .active:hover,.active:active,.active:focus,.active:target{
+        color: var(--primary-green) !important;
+      }
+      li:hover{
+        .name{
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

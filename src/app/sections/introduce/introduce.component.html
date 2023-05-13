@@ -1,0 +1,40 @@
+<div class="home" id="home">
+    <div class="header" [@foobar]="state">
+        <div class="intro">
+          <i class="fa-solid fa-house"></i>
+          INTRODUCE
+        </div>
+        <div class="nav-menu" (click)="toggleClass()" >
+          <i class="fa-solid fa-grip-lines"></i>
+        </div>
+    </div>
+    <div class="main">
+        <div class="head" [@foobar]="state">
+          Hi, I am <span>Jibon</span>,<br> Framer Designer and Developer
+        </div>
+        <div class="para" [@foobar]="state">
+          <p>I design and code beautifully simple things and i love what i do. Just simple like that!</p>
+        </div>
+        <div class="achieve" [@foobar]="state">
+            <div class="card">
+              <span>10+</span>
+              <p>YEARS OF<br>
+                EXPERIENCE</p>
+            </div>
+            <div class="card">
+              <span>118+</span>
+              <p>PROJECTS COMPLETED ON<br>
+                15 COUNTRIES</p>
+            </div>
+        </div>
+      <div class="round" [@foobar]="state">
+        <a href="#portfolio">
+        <img src="assets/round-text.png" alt="" srcset="">
+        <div class="arrow"><i class="las la-arrow-down"></i></div>
+        </a>
+      </div>
+    </div>
+</div>
+<div class="close" *ngIf="open" (click)="toggleClass()"></div>
+<app-nav-bar id="nav-bar" [ngClass]="{'open':open}"></app-nav-bar>
+<app-side-nav></app-side-nav>

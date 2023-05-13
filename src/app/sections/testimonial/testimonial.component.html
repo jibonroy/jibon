@@ -1,0 +1,46 @@
+<div class="testimonial" id="testimonial">
+  <div class="header" [@foobar]="state">
+    <div class="intro">
+      <i class="lar la-comment"></i>
+      TESTIMONIAL
+    </div>
+  </div>
+  <div class="main">
+    <div class="head"  [@foobar]="state">
+      Trusted by <span> Hundred Clients</span>
+    </div>
+    <div class="slider">
+      <div class="container-fluid">
+        <div class="slider-wrapper">
+          <div class="item" *ngFor="let datas of data"  [@foobar2]="state">
+            <div class="heading">
+              <div class="img">
+                <img src="{{datas.image}}" alt="Testimonial">
+              </div>
+              <div class="text">
+                <div class="h3">{{datas.name}}</div>
+                <div class="p">{{datas.title}}
+                  <span>{{datas.company}}</span>
+                </div>
+              </div>
+            </div>
+            <div class="comments">{{datas.comments}}</div>
+            <p>{{datas.project}}</p>
+          </div>
+        </div>
+        <div class="button"  [@foobar3]="state">
+          <button class="left" appLeft (click)="left()">&#60;</button>
+          <span><span>{{num}}</span>/3</span>
+          <button class="right" appRight (click)="right()">&#62;</button>
+        </div>
+      </div>
+    </div>
+    <p style="color: white; margin: 20px 20px 0">WORK WITH 60+ BRANDS WORLDWIDE</p>
+    <div class="clients">
+      <div class="img" *ngFor="let img of image">
+        <img src="{{img.url}}" [@foobar4]="state">
+      </div>
+    </div>
+  </div>
+</div>
+

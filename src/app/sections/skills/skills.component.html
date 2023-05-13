@@ -1,0 +1,24 @@
+<div class="skills" id="skills">
+  <div class="header" [@foobar]="state">
+    <div class="intro">
+      <i class="las la-shapes"></i>
+      MY SKILLS
+    </div>
+  </div>
+  <div class="main"  >
+    <div class="head"  [@foobar]="state">
+      My <span>Advantages</span>
+    </div>
+    <div class="child">
+    <div class="para" *ngFor="let skill of skills">
+      <div class="card" [@foobar2]="state">
+        <div class="section">
+          <img src="{{skill.logo}}" alt="{{skill.subject}}" srcset="" [@foobar3]="state">
+        <div class="h1" [@foobar3]="state">{{skill.skill}}</div>
+        </div>
+      </div>
+      <p [@foobar]="state">{{skill.subject}}</p>
+     </div>
+    </div>
+</div>
+</div>

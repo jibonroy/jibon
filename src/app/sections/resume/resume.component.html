@@ -1,0 +1,45 @@
+<div class="resume" id="resume">
+  <div class="header"  [@foobar]="state">
+    <div class="intro">
+      <i class="las la-briefcase"></i>
+      RESUME
+    </div>
+  </div>
+  <div class="main">
+    <div class="head"  [@foobar]="state">
+      Education & <span>Experience</span>
+    </div>
+    <div class="para">
+        <ul>
+          <li><div class="certificate" [@foobar2]="state">
+            <div>
+              <div class="year">{{educationDetails1.year}}</div>
+              <div class="subject"><h1>{{educationDetails1.subject}}</h1></div>
+              <div class="agency">{{educationDetails1.agency}}</div>
+            </div>
+            <div class="subject"><h1>{{educationDetails2.subject}}</h1></div>
+            <div class="agency">{{educationDetails2.agency}}</div>
+            <div class="subject"><h1>{{educationDetails3.subject}}</h1></div>
+            <div class="agency">{{educationDetails3.agency}}</div>
+          </div>
+          </li>
+          <li><div class="certificate"  [@foobar]="state">
+            <div class="year">{{educationDetails4.year}}</div>
+            <div class="subject"><h1>{{educationDetails4.subject}}</h1></div>
+            <div class="agency">{{educationDetails4.agency}}</div>
+            <div class="subject"><h1>{{educationDetails5.subject}}</h1></div>
+            <div class="agency">{{educationDetails5.agency}}</div>
+            </div>
+          </li>
+          <li><div class="certificate"  [@foobar2]="state">
+            <div class="year">{{educationDetails6.year}}</div>
+            <div class="subject"><h1>{{educationDetails6.subject}}</h1></div>
+            <div class="agency">{{educationDetails6.agency}}</div>
+          </div>
+          </li>
+        </ul>
+    </div>
+
+  </div>
+</div>
+

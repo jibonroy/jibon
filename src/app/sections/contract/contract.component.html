@@ -1,0 +1,53 @@
+<div class="contact" id="contact">
+  <div class="section-header">
+    <h4 class="subtitle"  [@foobar]="state">
+      <i class="las la-dollar-sign"></i> contact
+    </h4>
+    <div [@foobar]="state">
+    <h1>Let's Work <span>Together!</span></h1>
+    <p class="addr">hello@jibon.design</p>
+    </div>
+    <form (submit)="done()">
+      <div class="grid-box" [@foobar2]="state">
+        <div>
+        <label for="name">FULL NAME <sup>*</sup></label><br>
+        <input type="text" name="name" id="name" placeholder="Your Full Name">
+        </div>
+      <div>
+        <label for="email">EMAIL <sup>*</sup></label><br>
+        <input type="email" name="email" id="email" placeholder="Your Email">
+      </div>
+      <div>
+        <label for="number">PHONE (optional)</label><br>
+        <input type="text" name="number" id="number" placeholder="Your Full Name">
+      </div>
+      <div>
+        <label for="subject">SUBJECT <sup>*</sup></label><br>
+        <select id="subject">
+          <option>Web Development</option>
+          <option>Web Design</option>
+        </select>
+      </div>
+      </div>
+        <div class="full" [@foobar3]="state">
+          <div>
+            <label for="budget">YOUR BUDGET</label><br>
+            <input type="text" name="number" id="budget" placeholder="Your Budget">
+          </div>
+          <div>
+            <label for="massage">MESSAGE</label><br>
+            <textarea name="massage" id="massage" placeholder="Write Your Massage Here..."></textarea>
+        </div>
+          <div class="upload">
+            <label for="upload">
+              <i class="las la-cloud-upload-alt"></i>
+              add an attachment
+              <input type="file" name="file" id="upload">
+            </label>
+          </div>
+      </div>
+      <input type="submit" value="SEND MESSAGE" [@foobar2]="state">
+    </form>
+
+  </div>
+</div>

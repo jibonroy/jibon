@@ -1,0 +1,24 @@
+<div class="services" id="services">
+  <div class="header" [@foobar]="state">
+    <div class="intro">
+      <i class="las la-stream"></i>
+      SERVICES
+    </div>
+  </div>
+  <div class="main">
+    <div class="head" [@foobar]="state">
+      My <span>Specializations</span>
+    </div>
+    <div class="para">
+      <div class="card" *ngFor="let cards of services" [@foobar3]="state">
+        <div class="section">
+          <p class="h1">{{cards.header}}</p>
+          <i class="{{cards.logo}}"></i>
+        </div>
+        <p>{{cards.description}}</p>
+        <p>{{cards.projects}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
